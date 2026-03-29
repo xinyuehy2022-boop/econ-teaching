@@ -1,6 +1,6 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI(import.meta.env.VITE_GEMINI_API_KEY || "");
+const ai = new GoogleGenAI("AIzaSyCCCQ8tbYBFvZtQ6ckuYBg29TScKM5znpI");
 
 export interface VisualStep {
   title: string;
