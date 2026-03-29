@@ -22,7 +22,7 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install and Build
+- name: Install and Build
         run: |
           npm install
           VITE_GEMINI_API_KEY=${{ secrets.VITE_GEMINI_API_KEY }} npm run build
