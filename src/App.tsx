@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+const GEMINI_API_KEY = "AIzaSyCCCQ8tbYBFvZtQ6ckuYBg29TScKM5znpI";
 import { 
   BookOpen, ChevronRight, GraduationCap, Search, Loader2, Menu, X, 
   BookMarked, CheckCircle2, PlayCircle, HelpCircle, ArrowRight,
@@ -9,6 +10,7 @@ import Markdown from 'react-markdown';
 import { ECONOMICS_CHAPTERS, type KnowledgePoint, type Chapter } from './constants';
 import { getDetailedLearningContent, type DetailedContent } from './services/gemini';
 import { cn } from './lib/utils';
+const GEMINI_API_KEY = "AIzaSyCCCQ8tbYBFvZtQ6ckuYBg29TScKM5znpI";
 
 export default function App() {
   const [selectedPoint, setSelectedPoint] = useState<KnowledgePoint | null>(null);
