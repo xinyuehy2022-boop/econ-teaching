@@ -25,9 +25,10 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run build
-
-      - name: Setup Pages
+          - name: Install and Build
+        run: |
+          npm install
+          VITE_GEMINI_API_KEY=${{ secrets.VITE_GEMINI_API_KEY }} npm run build
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
